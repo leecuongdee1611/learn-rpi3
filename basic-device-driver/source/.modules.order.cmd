@@ -1,0 +1,1 @@
+cmd_/home/nn/workspace/learn-rpi3/basic-device-driver/source/modules.order := {   echo /home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.ko; :; } | awk '!x[$$0]++' - > /home/nn/workspace/learn-rpi3/basic-device-driver/source/modules.order
