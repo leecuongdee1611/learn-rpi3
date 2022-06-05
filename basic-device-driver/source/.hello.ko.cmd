@@ -1,1 +1,0 @@
-cmd_/home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.ko := ld -r -EL  -maarch64elf --build-id=sha1  -T scripts/module.lds -o /home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.ko /home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.o /home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.mod.o;  true

@@ -28,15 +28,10 @@ MODULE_INFO(retpoline, "Y");
 static const struct modversion_info ____versions[]
 __used __section("__versions") = {
 	{ 0x7d0b00ef, "module_layout" },
-	{ 0x95231b80, "param_ops_charp" },
-	{ 0xe8d068d1, "param_array_ops" },
-	{ 0xe40769c1, "param_ops_int" },
-	{ 0x20d256bc, "param_get_int" },
 	{ 0x92997ed8, "_printk" },
-	{ 0x6c06b27, "param_set_int" },
 };
 
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "30BC9C7F3538F3987DDBB30");
+MODULE_INFO(srcversion, "CA1604AF33CD85887A5B731");

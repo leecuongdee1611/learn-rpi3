@@ -1,8 +1,10 @@
-cmd_/home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.o := gcc -Wp,-MMD,/home/nn/workspace/learn-rpi3/basic-device-driver/source/.hello.o.d -nostdinc -isystem /usr/lib/gcc/aarch64-linux-gnu/10/include -I./arch/arm64/include -I./arch/arm64/include/generated  -I./include -I./arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DCC_USING_PATCHABLE_FUNCTION_ENTRY -DKASAN_SHADOW_SCALE_SHIFT= -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -mgeneral-regs-only -DCONFIG_CC_HAS_K_CONSTRAINT=1 -Wno-psabi -mabi=lp64 -fno-asynchronous-unwind-tables -fno-unwind-tables -mbranch-protection=pac-ret+leaf+bti -Wa,-march=armv8.5-a -DARM64_ASM_ARCH='"armv8.5-a"' -DKASAN_SHADOW_SCALE_SHIFT= -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=2048 -fstack-protector-strong -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-stack-clash-protection -fpatchable-function-entry=2 -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-zero-length-bounds -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1344  -DMODULE  -DKBUILD_BASENAME='"hello"' -DKBUILD_MODNAME='"hello"' -D__KBUILD_MODNAME=kmod_hello -c -o /home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.o /home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.c
+cmd_/home/nn/workspace/learn-rpi3/device-drivers/02_passing_arguments/source/main.mod.o := gcc -Wp,-MMD,/home/nn/workspace/learn-rpi3/device-drivers/02_passing_arguments/source/.main.mod.o.d -nostdinc -isystem /usr/lib/gcc/aarch64-linux-gnu/10/include -I./arch/arm64/include -I./arch/arm64/include/generated -I./include -I./arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DCC_USING_PATCHABLE_FUNCTION_ENTRY -DKASAN_SHADOW_SCALE_SHIFT= -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -mgeneral-regs-only -DCONFIG_CC_HAS_K_CONSTRAINT=1 -Wno-psabi -mabi=lp64 -fno-asynchronous-unwind-tables -fno-unwind-tables -mbranch-protection=pac-ret+leaf+bti -Wa,-march=armv8.5-a -DARM64_ASM_ARCH='"armv8.5-a"' -DKASAN_SHADOW_SCALE_SHIFT= -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=2048 -fstack-protector-strong -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-stack-clash-protection -fpatchable-function-entry=2 -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-zero-length-bounds -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1344 -DMODULE -DKBUILD_BASENAME='"main.mod"' -DKBUILD_MODNAME='"main"' -D__KBUILD_MODNAME=kmod_main -c -o /home/nn/workspace/learn-rpi3/device-drivers/02_passing_arguments/source/main.mod.o /home/nn/workspace/learn-rpi3/device-drivers/02_passing_arguments/source/main.mod.c
 
-source_/home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.o := /home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.c
+source_/home/nn/workspace/learn-rpi3/device-drivers/02_passing_arguments/source/main.mod.o := /home/nn/workspace/learn-rpi3/device-drivers/02_passing_arguments/source/main.mod.c
 
-deps_/home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.o := \
+deps_/home/nn/workspace/learn-rpi3/device-drivers/02_passing_arguments/source/main.mod.o := \
+    $(wildcard include/config/MODULE_UNLOAD) \
+    $(wildcard include/config/RETPOLINE) \
   include/linux/compiler-version.h \
     $(wildcard include/config/CC_VERSION_TEXT) \
   include/linux/kconfig.h \
@@ -14,7 +16,6 @@ deps_/home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.o := \
     $(wildcard include/config/CC_HAS_ASM_INLINE) \
   include/linux/compiler_attributes.h \
   include/linux/compiler-gcc.h \
-    $(wildcard include/config/RETPOLINE) \
     $(wildcard include/config/ARCH_USE_BUILTIN_BSWAP) \
     $(wildcard include/config/KCOV) \
   arch/arm64/include/asm/compiler.h \
@@ -40,7 +41,6 @@ deps_/home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.o := \
     $(wildcard include/config/KPROBES) \
     $(wildcard include/config/HAVE_STATIC_CALL_INLINE) \
     $(wildcard include/config/PRINTK_INDEX) \
-    $(wildcard include/config/MODULE_UNLOAD) \
     $(wildcard include/config/CONSTRUCTORS) \
     $(wildcard include/config/FUNCTION_ERROR_INJECTION) \
   include/linux/list.h \
@@ -867,7 +867,14 @@ deps_/home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.o := \
     $(wildcard include/config/HAVE_MOD_ARCH_SPECIFIC) \
     $(wildcard include/config/MODULES_USE_ELF_REL) \
     $(wildcard include/config/MODULES_USE_ELF_RELA) \
+  include/linux/build-salt.h \
+    $(wildcard include/config/BUILD_SALT) \
+  include/linux/elfnote.h \
+  include/linux/elfnote-lto.h \
+  include/linux/vermagic.h \
+  include/generated/utsrelease.h \
+  arch/arm64/include/asm/vermagic.h \
 
-/home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.o: $(deps_/home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.o)
+/home/nn/workspace/learn-rpi3/device-drivers/02_passing_arguments/source/main.mod.o: $(deps_/home/nn/workspace/learn-rpi3/device-drivers/02_passing_arguments/source/main.mod.o)
 
-$(deps_/home/nn/workspace/learn-rpi3/basic-device-driver/source/hello.o):
+$(deps_/home/nn/workspace/learn-rpi3/device-drivers/02_passing_arguments/source/main.mod.o):
