@@ -1,16 +1,23 @@
 /*
  * ten file: vchar_driver.c
- * tac gia : dat.a3cbq91@gmail.com
- * ngay tao: 9/12/2018
+ * tac gia : Le Hung Cuong
+ * ngay tao: June - 7 -2022
  * mo ta   : char driver cho thiet bi gia lap vchar_device.
  *           vchar_device la mot thiet bi nam tren RAM.
  */
 
 #include <linux/module.h> /* thu vien nay dinh nghia cac macro nhu module_init va module_exit */
+#include <linux/fs.h> /*for device number*/
 
-#define DRIVER_AUTHOR "Nguyen Tien Dat <dat.a3cbq91@gmail.com>"
+#define DRIVER_AUTHOR "Le Hung Cuong"
 #define DRIVER_DESC   "A sample character device driver"
-#define DRIVER_VERSION "0.1"
+#define DRIVER_VERSION "0.2"
+
+struct _vchar_drv 
+{
+	dev_t dev_num;
+} vchar_drv;
+
 
 /****************************** device specific - START *****************************/
 /* ham khoi tao thiet bi */
@@ -35,7 +42,9 @@
 /* ham khoi tao driver */
 static int __init vchar_driver_init(void)
 {
+	int ret = 0;
 	/* cap phat device number */
+	vchar_drv.dev_num = MKDRV(235,0);
 
 	/* tao device file */
 

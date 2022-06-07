@@ -27,9 +27,8 @@ MODULE_INFO(retpoline, "Y");
 
 static const struct modversion_info ____versions[]
 __used __section("__versions") = {
-	{ 0xd9726f80, "module_layout" },
-	{ 0xc5850110, "printk" },
-	{ 0xbdfb6dbb, "__fentry__" },
+	{ 0x7d0b00ef, "module_layout" },
+	{ 0x92997ed8, "_printk" },
 };
 
 MODULE_INFO(depends, "");
