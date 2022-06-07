@@ -1,0 +1,3 @@
+#Kbuild
+EXTRA_FGLAGS=-Wall
+obj-m = vchar_driver.o
