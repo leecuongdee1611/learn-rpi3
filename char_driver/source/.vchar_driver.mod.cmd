@@ -1,1 +1,1 @@
-cmd_/home/nn/workspace/learn-rpi3/device-drivers/char_driver/source/vchar_driver.mod := { echo  /home/nn/workspace/learn-rpi3/device-drivers/char_driver/source/vchar_driver.o;  echo; } > /home/nn/workspace/learn-rpi3/device-drivers/char_driver/source/vchar_driver.mod
+cmd_/home/nn/workspace/learn-rpi3/char_driver/source/vchar_driver.mod := { echo  /home/nn/workspace/learn-rpi3/char_driver/source/vchar_driver.o;  echo; } > /home/nn/workspace/learn-rpi3/char_driver/source/vchar_driver.mod

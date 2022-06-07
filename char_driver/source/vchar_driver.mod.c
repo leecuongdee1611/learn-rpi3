@@ -30,10 +30,10 @@ __used __section("__versions") = {
 	{ 0x7d0b00ef, "module_layout" },
 	{ 0x6091b333, "unregister_chrdev_region" },
 	{ 0x92997ed8, "_printk" },
-	{ 0x3fd78f3b, "register_chrdev_region" },
+	{ 0xe3ec2f2b, "alloc_chrdev_region" },
 };
 
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "FC7C79361B0213FB895EF45");
+MODULE_INFO(srcversion, "05C502C73EBE85EDA9E0D96");

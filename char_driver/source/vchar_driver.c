@@ -44,13 +44,16 @@ static int __init vchar_driver_init(void)
 {
 	int ret = 0;
 	/* cap phat device number */
-	vchar_drv.dev_num = MKDEV(259,0);
-	ret = register_chrdev_region(vchar_drv.dev_num, 1, "vchar_device");
+	// vchar_drv.dev_num = MKDEV(259,0);
+	// ret = register_chrdev_region(vchar_drv.dev_num, 1, "vchar_device");
+	vchar_drv.dev_num = 0;
+	ret = alloc_chrdev_region(&vchar_drv.dev_num, 0, 1, "vchar_device");
 	if (ret < 0)
 	{
 		printk("Failed to register device number statically\n");
 		goto failed_register_devnum;
 	}
+	printk("Allocated device number (%d,%d) \n", MAJOR(vchar_drv.dev_num), MINOR(vchar_drv.dev_num));
 
 	/* tao device file */
 
