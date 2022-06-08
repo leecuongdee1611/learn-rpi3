@@ -1,0 +1,1 @@
+cmd_/home/nn/workspace/learn-rpi3/device-drivers/04_dynamic_device_number/source/Module.symvers := sed 's/\.ko$$/\.o/' /home/nn/workspace/learn-rpi3/device-drivers/04_dynamic_device_number/source/modules.order | scripts/mod/modpost -m -a  -o /home/nn/workspace/learn-rpi3/device-drivers/04_dynamic_device_number/source/Module.symvers -e -i Module.symvers   -T -

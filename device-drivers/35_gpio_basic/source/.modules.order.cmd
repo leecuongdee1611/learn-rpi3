@@ -1,0 +1,1 @@
+cmd_/home/nn/workspace/learn-rpi3/device-drivers/35_gpio_basic/source/modules.order := {   echo /home/nn/workspace/learn-rpi3/device-drivers/35_gpio_basic/source/gpio_basic.ko; :; } | awk '!x[$$0]++' - > /home/nn/workspace/learn-rpi3/device-drivers/35_gpio_basic/source/modules.order
