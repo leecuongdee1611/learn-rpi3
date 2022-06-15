@@ -1,2 +1,0 @@
-cd source
-./hello > log
