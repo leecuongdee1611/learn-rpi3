@@ -1,1 +1,0 @@
-cmd_/home/nn/Yocto-Cuong/learn-rpi3/device-drivers/char_driver/source/vchar_driver.mod := { echo  /home/nn/Yocto-Cuong/learn-rpi3/device-drivers/char_driver/source/vchar_driver.o;  echo; } > /home/nn/Yocto-Cuong/learn-rpi3/device-drivers/char_driver/source/vchar_driver.mod

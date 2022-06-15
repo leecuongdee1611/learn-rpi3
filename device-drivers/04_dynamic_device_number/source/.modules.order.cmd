@@ -1,0 +1,1 @@
+cmd_/home/nn/workspace/learn-rpi3/device-drivers/04_dynamic_device_number/source/modules.order := {   echo /home/nn/workspace/learn-rpi3/device-drivers/04_dynamic_device_number/source/dynamic_alloc.ko; :; } | awk '!x[$$0]++' - > /home/nn/workspace/learn-rpi3/device-drivers/04_dynamic_device_number/source/modules.order
