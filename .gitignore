@@ -1,0 +1,8 @@
+# Kernel build file
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.o
+*.order
+*.symvers
