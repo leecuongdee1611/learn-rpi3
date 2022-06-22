@@ -1,7 +1,7 @@
 #include <linux/kernel.h>
 #include <linux/init.h>
 #include <linux/module.h> /* Define module_init module_exit */
-#include <linux/fs.h> /* Create device number */
+#include <linux/fs.h>	  /* Create device number */
 #include <linux/device.h> /* Create device file */
 //#include <linux/kdev_t.h> /* Create device file */
 #include <linux/cdev.h> /* Create cdev structure and file operation  */
@@ -13,26 +13,26 @@ static struct cdev etx_cdev;
 /*
 	Function Prototype
 */
-static int 		__init etx_driver_init(void);
-static void 	__exit etx_driver_exit(void);
-static int 		etx_open(struct inode *inode, struct file *file);
-static int 		etx_release(struct inode *inode, struct file *file);
-static ssize_t	etx_read(struct file *filp, char __user *buf, size_t len, loff_t * off);
-static ssize_t	etx_write(struct file *filp, const char *buf, size_t len, loff_t * off);
+static int __init etx_driver_init(void);
+static void __exit etx_driver_exit(void);
+static int etx_open(struct inode *inode, struct file *file);
+static int etx_release(struct inode *inode, struct file *file);
+static ssize_t etx_read(struct file *filp, char __user *buf, size_t len, loff_t *off);
+static ssize_t etx_write(struct file *filp, const char *buf, size_t len, loff_t *off);
 
-static struct file_operations fops = 
-{
-	.owner		= THIS_MODULE,
-	.read		= etx_read,
-	.write		= etx_write,
-	.open		= etx_open,
-	.release	= etx_release,
+static struct file_operations fops =
+	{
+		.owner = THIS_MODULE,
+		.read = etx_read,
+		.write = etx_write,
+		.open = etx_open,
+		.release = etx_release,
 };
 
 /*
 	This function will be called when we open the Device file
 */
-static int 		etx_open(struct inode *inode, struct file *file)
+static int etx_open(struct inode *inode, struct file *file)
 {
 	pr_info("Driver Open Function Called...!!!\n");
 	return 0;
@@ -41,7 +41,7 @@ static int 		etx_open(struct inode *inode, struct file *file)
 /*
 	This function will be called when we close the Device file
 */
-static int 		etx_release(struct inode *inode, struct file *file)
+static int etx_release(struct inode *inode, struct file *file)
 {
 	pr_info("Driver Release Function Called...!!!\n");
 	return 0;
@@ -50,7 +50,7 @@ static int 		etx_release(struct inode *inode, struct file *file)
 /*
 	This function will be called when we read the Device file
 */
-static ssize_t	etx_read(struct file *filp, char __user *buf, size_t len, loff_t * off)
+static ssize_t etx_read(struct file *filp, char __user *buf, size_t len, loff_t *off)
 {
 	pr_info("Driver Read Function Called...!!!\n");
 	return 0;
@@ -59,12 +59,11 @@ static ssize_t	etx_read(struct file *filp, char __user *buf, size_t len, loff_t 
 /*
 	This function will be called when we write the Device file
 */
-static ssize_t	etx_write(struct file *filp, const char __user *buf, size_t len, loff_t * off)
+static ssize_t etx_write(struct file *filp, const char __user *buf, size_t len, loff_t *off)
 {
 	pr_info("Driver Write Function Called...!!!\n");
 	return 0;
 }
-
 
 /*
 	Module Init Function
@@ -90,7 +89,7 @@ static int __init etx_driver_init(void)
 	}
 
 	/* Creating struct class */
-	if ((dev_class = class_create(THIS_MODULE,"etx_class")) == NULL)
+	if ((dev_class = class_create(THIS_MODULE, "etx_class")) == NULL)
 	{
 		pr_err("Cannot create the struct class for device \n");
 		goto r_class;
@@ -109,7 +108,7 @@ static int __init etx_driver_init(void)
 r_device:
 	class_destroy(dev_class);
 r_class:
-	unregister_chrdev_region(dev,1);
+	unregister_chrdev_region(dev, 1);
 	return -1;
 }
 
