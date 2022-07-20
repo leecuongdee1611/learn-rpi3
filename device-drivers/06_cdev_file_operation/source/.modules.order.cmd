@@ -1,1 +1,0 @@
-cmd_/home/nn/workspace/learn-rpi3/device-drivers/06_cdev_file_operation/source/modules.order := {   echo /home/nn/workspace/learn-rpi3/device-drivers/06_cdev_file_operation/source/driver.ko; :; } | awk '!x[$$0]++' - > /home/nn/workspace/learn-rpi3/device-drivers/06_cdev_file_operation/source/modules.order

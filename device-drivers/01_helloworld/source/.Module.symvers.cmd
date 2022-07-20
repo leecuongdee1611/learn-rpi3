@@ -1,1 +1,0 @@
-cmd_/home/nn/Yocto-Cuong/learn-rpi3/device-drivers/01_helloworld/source/Module.symvers := sed 's/\.ko$$/\.o/' /home/nn/Yocto-Cuong/learn-rpi3/device-drivers/01_helloworld/source/modules.order | scripts/mod/modpost -m -a  -o /home/nn/Yocto-Cuong/learn-rpi3/device-drivers/01_helloworld/source/Module.symvers -e -i Module.symvers   -T -

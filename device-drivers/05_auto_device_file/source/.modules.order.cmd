@@ -1,1 +1,0 @@
-cmd_/media/sf_SHARE/learn-rpi3/device-drivers/05_auto_device_file/source/modules.order := {   echo /media/sf_SHARE/learn-rpi3/device-drivers/05_auto_device_file/source/auto_device_file.ko; :; } | awk '!x[$$0]++' - > /media/sf_SHARE/learn-rpi3/device-drivers/05_auto_device_file/source/modules.order
