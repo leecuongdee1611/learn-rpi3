@@ -1,1 +1,0 @@
-cmd_/media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/demo-led-gpio-sysfs.mod := { echo  /media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/demo-led-gpio-sysfs.o;  echo; } > /media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/demo-led-gpio-sysfs.mod

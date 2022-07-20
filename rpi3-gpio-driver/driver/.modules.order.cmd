@@ -1,1 +1,0 @@
-cmd_/media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/modules.order := {   echo /media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/demo-led-gpio-sysfs.ko; :; } | awk '!x[$$0]++' - > /media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/modules.order

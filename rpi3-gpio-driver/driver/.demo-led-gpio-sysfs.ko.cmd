@@ -1,1 +1,0 @@
-cmd_/media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/demo-led-gpio-sysfs.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/demo-led-gpio-sysfs.ko /media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/demo-led-gpio-sysfs.o /media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/demo-led-gpio-sysfs.mod.o;  true

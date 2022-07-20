@@ -1,1 +1,0 @@
-cmd_/media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/Module.symvers := sed 's/\.ko$$/\.o/' /media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/modules.order | scripts/mod/modpost -m -a  -o /media/sf_SHARE/learn-rpi3/rpi3-led-driver/driver/Module.symvers -e -i Module.symvers   -T -
